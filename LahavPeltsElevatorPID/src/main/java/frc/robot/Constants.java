@@ -19,20 +19,20 @@ public final class Constants {
   public static final int MotorId = 1;
   public static final int ControllerId = 1;
   
-  public static final double ratio = 0.98443717854095;
+  public static final double ratio = 10/(Math.PI*3.23342);
 
-  public static final double IdleHeight = 5;
+  public static final double IdleHeight = 0;
   public static final double L1Height = 40;
-  public static final double L2Height = 80;
+  public static final double L2Height = 60;
   public static final double L3Height = 100;
   public static final double L4Height = 120;
 
   public static TalonFXConfiguration TalonFxConfig(){
     TalonFXConfiguration config = new TalonFXConfiguration();
-    config.Slot0.kP = 1;
-    config.Slot0.kI = 0;
-    config.Slot0.kD = 0.1;
-    config.Slot0.kG = 0.01;
+    config.Slot0.kP = 3;
+    config.Slot0.kI = 0.001;
+    config.Slot0.kD = 0.2;
+    config.Slot0.kG = 0.17;
 
     return config;
   }

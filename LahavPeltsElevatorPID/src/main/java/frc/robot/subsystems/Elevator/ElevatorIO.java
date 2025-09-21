@@ -5,6 +5,6 @@ public interface ElevatorIO{
 
     default void updateInputs(ElevatorIOInputs inputs) {}
     public class ElevatorIOInputs{
-        public double height;
+        public double height = 0;
     }
 }
